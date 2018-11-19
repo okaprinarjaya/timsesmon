@@ -1,0 +1,3 @@
+[submodule "plugins/BaseApp"]
+	path = plugins/BaseApp
+	url = git@github.com:okaprinarjaya/base-app-module.git
