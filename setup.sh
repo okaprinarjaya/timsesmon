@@ -29,7 +29,9 @@ then
 
   $1 bin/cake.php migrations migrate -p BaseApp
   $1 bin/cake.php migrations migrate -p CakeDC/Users
+  $1 bin/cake.php migrations migrate
   $1 bin/cake.php migrations seed --plugin BaseApp
+  $1 bin/cake.php migrations seed
 
 else
   echo "Please set alternative PHP location"
