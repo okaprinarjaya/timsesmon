@@ -18,7 +18,7 @@ use Cake\Core\Configure;
 use Cake\Http\Exception\ForbiddenException;
 use Cake\Http\Exception\NotFoundException;
 use Cake\View\Exception\MissingTemplateException;
-
+use Cake\ORM\TableRegistry;
 use \PhpOffice\PhpSpreadsheet\Reader\Xls;
 
 /**
@@ -77,24 +77,14 @@ class PagesController extends AppController
   public function testReadXls()
   {
     $this->autoRender = false;
-    $xlsx_reader = new Xls();
-    $sheet = $xlsx_reader->load(WWW_ROOT . 'files' . DS . 'relawan-wilayah.xls');
-    $rows = $sheet->getActiveSheet()->toArray(null, true, true, true);
-    $data = [];
-    $code_pattern = 'WPR00000';
+    $wil_kabkot_tbl = TableRegistry::getTableLocator()->get('WilayahKabkot');
+    $wil_kabkot_fetch = $wil_kabkot_tbl->find('all', ['conditions' => ['deleted' => 'N']]);
+    $kabkots = \Cake\Utility\Hash::combine(
+      $wil_kabkot_fetch->toArray(),
+      '{n}.nama_kabkot',
+      ['%s.%s', '{n}.wilayah_prov_id', '{n}.wilayah_kabkot_id']
+    );
 
-    unset($rows[1]);
-
-    $i = 1;
-    foreach ($rows as $row) {
-      $num_to_str = '' . $i;
-      $num_to_str_len = strlen($num_to_str);
-      $code = substr_replace($code_pattern, $num_to_str, 8 - $num_to_str_len, $num_to_str_len);
-
-      array_push($data, ['wilayah_prov_id' => $code, 'nama_prov' => $row['B']]);
-      $i++;
-    }
-
-    debug($rows);
+    debug($kabkots);
   }
 }

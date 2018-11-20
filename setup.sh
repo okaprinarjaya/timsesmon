@@ -31,7 +31,9 @@ then
   $1 bin/cake.php migrations migrate -p CakeDC/Users
   $1 bin/cake.php migrations migrate
   $1 bin/cake.php migrations seed --plugin BaseApp
-  $1 bin/cake.php migrations seed
+  $1 bin/cake.php migrations seed --seed ElectionSessionSeed
+  $1 bin/cake.php migrations seed --seed SequentialWilayahSeed
+  $1 bin/cake.php migrations seed --seed RelawanSeed
 
 else
   echo "Please set alternative PHP location"

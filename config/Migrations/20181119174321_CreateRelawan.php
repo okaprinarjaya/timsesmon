@@ -13,6 +13,10 @@ class CreateRelawan extends AbstractMigration
     $table->addColumn('wilayah_kabkot_id', 'char', ['length' => 8, 'null' => false]);
     $table->addColumn('wilayah_kec_id', 'char', ['length' => 8, 'null' => false]);
     $table->addColumn('wilayah_kel_id', 'char', ['length' => 10, 'null' => false]);
+    $table->addColumn('nama_prov', 'string', ['length' => 32, 'null' => false]);
+    $table->addColumn('nama_kabkot', 'string', ['length' => 32, 'null' => false]);
+    $table->addColumn('nama_kec', 'string', ['length' => 32, 'null' => false]);
+    $table->addColumn('nama_kel', 'string', ['length' => 32, 'null' => false]);
     $table->addColumn('created_by', 'char', ['length' => 36, 'null' => true, 'default' => null]);
     $table->addColumn('modified_by', 'string', ['length' => 36, 'null' => true, 'default' => null]);
     $table->addColumn('created', 'datetime', ['null' => false, 'default' => 'CURRENT_TIMESTAMP']);
