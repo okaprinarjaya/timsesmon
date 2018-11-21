@@ -59,6 +59,9 @@ Router::scope('/', function (RouteBuilder $routes) {
      */
     $routes->connect('/pages/*', ['controller' => 'Pages', 'action' => 'display']);
 
+    $routes->connect('/master-data/relawan', ['controller' => 'MasterDataRelawan', 'action' => 'index']);
+    $routes->connect('/master-data/relawan/setup', ['controller' => 'MasterDataRelawan', 'action' => 'setup']);
+
     $routes->connect('/xls', ['controller' => 'Pages', 'action' => 'testReadXls']);
 
     /**

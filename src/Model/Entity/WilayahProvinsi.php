@@ -30,6 +30,7 @@ class WilayahProvinsi extends Entity
    * @var array
    */
   protected $_accessible = [
+    'wilayah_prov_id' => true,
     'election_session_id' => true,
     'nama_prov' => true,
     'created_by' => true,
@@ -37,6 +38,5 @@ class WilayahProvinsi extends Entity
     'created' => true,
     'modified' => true,
     'deleted' => true,
-    'election_session' => true
   ];
 }

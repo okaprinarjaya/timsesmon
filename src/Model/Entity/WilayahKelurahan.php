@@ -37,6 +37,7 @@ class WilayahKelurahan extends Entity
     'wilayah_prov_id' => true,
     'wilayah_kabkot_id' => true,
     'wilayah_kec_id' => true,
+    'wilayah_kel_id' => true,
     'election_session_id' => true,
     'nama_prov' => true,
     'nama_kabkot' => true,

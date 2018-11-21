@@ -35,6 +35,7 @@ class WilayahKecamatan extends Entity
   protected $_accessible = [
     'wilayah_prov_id' => true,
     'wilayah_kabkot_id' => true,
+    'wilayah_kec_id' => true,
     'election_session_id' => true,
     'nama_prov' => true,
     'nama_kabkot' => true,

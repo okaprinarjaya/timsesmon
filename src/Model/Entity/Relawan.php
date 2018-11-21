@@ -32,12 +32,17 @@ class Relawan extends Entity
    * @var array
    */
   protected $_accessible = [
+    'username' => true,
     'password' => true,
     'election_session_id' => true,
     'wilayah_prov_id' => true,
     'wilayah_kabkot_id' => true,
     'wilayah_kec_id' => true,
     'wilayah_kel_id' => true,
+    'nama_prov' => true,
+    'nama_kabkot' => true,
+    'nama_kec' => true,
+    'nama_kel' => true,
     'created_by' => true,
     'modified_by' => true,
     'created' => true,
