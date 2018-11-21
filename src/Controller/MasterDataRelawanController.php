@@ -2,7 +2,6 @@
 namespace App\Controller;
 
 use Cake\ORM\TableRegistry;
-use Cake\Datasource\ConnectionManager;
 
 class MasterDataRelawanController extends AppController
 {
