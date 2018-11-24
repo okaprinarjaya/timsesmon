@@ -11,13 +11,6 @@ class WilayahProvinsiFixture extends TestFixture
 {
 
     /**
-     * Table name
-     *
-     * @var string
-     */
-    public $table = 'wilayah_provinsi';
-
-    /**
      * Fields
      *
      * @var array
@@ -51,13 +44,13 @@ class WilayahProvinsiFixture extends TestFixture
     {
         $this->records = [
             [
-                'wilayah_prov_id' => 'e6ce8439-b890-4483-9af4-4546e430c060',
+                'wilayah_prov_id' => '1727af8f-b434-4609-984c-57d34f2748ba',
                 'election_session_id' => 'Lore',
                 'nama_prov' => 'Lorem ipsum dolor sit amet',
-                'created_by' => 'd32206f0-06f3-4f9f-9b72-577103f1fa2c',
+                'created_by' => '3677663b-4ca9-4778-9f3a-6832bfdb8905',
                 'modified_by' => 'Lorem ipsum dolor sit amet',
-                'created' => '2018-11-20 12:13:49',
-                'modified' => '2018-11-20 12:13:49',
+                'created' => '2018-11-24 16:50:16',
+                'modified' => '2018-11-24 16:50:16',
                 'deleted' => 'L'
             ],
         ];

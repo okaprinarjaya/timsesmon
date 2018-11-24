@@ -11,13 +11,6 @@ class WilayahKabkotFixture extends TestFixture
 {
 
     /**
-     * Table name
-     *
-     * @var string
-     */
-    public $table = 'wilayah_kabkot';
-
-    /**
      * Fields
      *
      * @var array
@@ -54,14 +47,14 @@ class WilayahKabkotFixture extends TestFixture
         $this->records = [
             [
                 'wilayah_prov_id' => 'Lorem ',
-                'wilayah_kabkot_id' => '4a4c3ca9-208b-4f89-a33d-63214e2d770e',
+                'wilayah_kabkot_id' => '3d5dc92e-f69e-42cf-b887-4d647bf86589',
                 'election_session_id' => 'Lore',
                 'nama_prov' => 'Lorem ipsum dolor sit amet',
                 'nama_kabkot' => 'Lorem ipsum dolor sit amet',
-                'created_by' => '640217ef-3fbc-4727-ad1c-0ddae1ed3866',
+                'created_by' => '162ee863-632c-40d9-a64d-cd8e253170cb',
                 'modified_by' => 'Lorem ipsum dolor sit amet',
-                'created' => '2018-11-20 14:38:43',
-                'modified' => '2018-11-20 14:38:43',
+                'created' => '2018-11-24 16:51:47',
+                'modified' => '2018-11-24 16:51:47',
                 'deleted' => 'L'
             ],
         ];

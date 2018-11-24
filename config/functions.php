@@ -1,6 +1,7 @@
 <?php
 use Cake\ORM\TableRegistry;
 use \PhpOffice\PhpSpreadsheet\Reader\Xls;
+use \Tuupola\Ksuid;
 
 function _readXlsFile($file_path)
 {
@@ -207,8 +208,10 @@ function _prepareRelawanData($xls_rows)
       $code_kabkot = $parent_code_split[1];
       $code_kec = $parent_code_split[2];
       $code_kel = $parent_code_split[3];
+      $ksuid = new Ksuid();
 
       $r = [
+        'relawan_id' => $ksuid,
         'username' => $username,
         'password' => '123',
         'election_session_id' => 'SESS01',

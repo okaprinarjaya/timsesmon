@@ -34,6 +34,7 @@ then
   $1 bin/cake.php migrations seed --seed ElectionSessionSeed
   $1 bin/cake.php migrations seed --seed SequentialWilayahSeed
   $1 bin/cake.php migrations seed --seed RelawanSeed
+  $1 bin/cake.php migrations seed --seed UsiaSeed
 
 else
   echo "Please set alternative PHP location"

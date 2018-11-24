@@ -4,22 +4,28 @@ namespace App\Model\Entity;
 use Cake\ORM\Entity;
 
 /**
- * Relawan Entity
+ * RelawanProfile Entity
  *
- * @property string $username
- * @property string $password
+ * @property int $id
+ * @property string $relawan_id
+ * @property string $nama
  * @property string $election_session_id
- * @property string $wilayah_prov_id
- * @property string $wilayah_kabkot_id
- * @property string $wilayah_kec_id
- * @property string $wilayah_kel_id
- * @property string|null $created_by
+ * @property string $gender
+ * @property string $usia_id
+ * @property string $pekerjaan_id
+ * @property string $penghasilan_id
+ * @property string|null $email
+ * @property string|null $alamat
+ * @property string|null $phonenumber
+ * @property string|null $photo_profile
+ * @property string|null $target_canvasing
+ * @property string $created_by
  * @property string|null $modified_by
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime|null $modified
  * @property string $deleted
  */
-class Relawan extends Entity
+class RelawanProfile extends Entity
 {
 
   /**
@@ -33,31 +39,21 @@ class Relawan extends Entity
    */
   protected $_accessible = [
     'relawan_id' => true,
-    'username' => true,
-    'password' => true,
+    'nama' => true,
     'election_session_id' => true,
-    'wilayah_prov_id' => true,
-    'wilayah_kabkot_id' => true,
-    'wilayah_kec_id' => true,
-    'wilayah_kel_id' => true,
-    'nama_prov' => true,
-    'nama_kabkot' => true,
-    'nama_kec' => true,
-    'nama_kel' => true,
+    'gender' => true,
+    'usia_id' => true,
+    'pekerjaan_id' => true,
+    'penghasilan_id' => true,
+    'email' => true,
+    'alamat' => true,
+    'phonenumber' => true,
+    'photo_profile' => true,
+    'target_canvasing' => true,
     'created_by' => true,
     'modified_by' => true,
     'created' => true,
     'modified' => true,
-    'blocked' => true,
     'deleted' => true
-  ];
-
-  /**
-   * Fields that are excluded from JSON versions of the entity.
-   *
-   * @var array
-   */
-  protected $_hidden = [
-    'password'
   ];
 }

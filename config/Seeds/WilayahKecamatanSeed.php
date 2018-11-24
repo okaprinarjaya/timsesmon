@@ -1,6 +1,5 @@
 <?php
 use Migrations\AbstractSeed;
-use Cake\ORM\TableRegistry;
 
 class WilayahKecamatanSeed extends AbstractSeed
 {

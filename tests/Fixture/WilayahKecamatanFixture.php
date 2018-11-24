@@ -11,13 +11,6 @@ class WilayahKecamatanFixture extends TestFixture
 {
 
     /**
-     * Table name
-     *
-     * @var string
-     */
-    public $table = 'wilayah_kecamatan';
-
-    /**
      * Fields
      *
      * @var array
@@ -57,15 +50,15 @@ class WilayahKecamatanFixture extends TestFixture
             [
                 'wilayah_prov_id' => 'Lorem ',
                 'wilayah_kabkot_id' => 'Lorem ',
-                'wilayah_kec_id' => '6a739c7c-e8a9-4912-b8e2-e8b309c699bb',
+                'wilayah_kec_id' => '0b4eac1c-79bd-47b4-887e-a5348d728945',
                 'election_session_id' => 'Lore',
                 'nama_prov' => 'Lorem ipsum dolor sit amet',
                 'nama_kabkot' => 'Lorem ipsum dolor sit amet',
                 'nama_kec' => 'Lorem ipsum dolor sit amet',
-                'created_by' => 'fd949531-eb84-4be4-9884-2898621f36b9',
+                'created_by' => '422c2f1e-6682-4726-ad4d-f8435e5deae3',
                 'modified_by' => 'Lorem ipsum dolor sit amet',
-                'created' => '2018-11-20 14:27:12',
-                'modified' => '2018-11-20 14:27:12',
+                'created' => '2018-11-24 16:51:28',
+                'modified' => '2018-11-24 16:51:28',
                 'deleted' => 'L'
             ],
         ];

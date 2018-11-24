@@ -11,13 +11,6 @@ class ElectionSessionFixture extends TestFixture
 {
 
     /**
-     * Table name
-     *
-     * @var string
-     */
-    public $table = 'election_session';
-
-    /**
      * Fields
      *
      * @var array
@@ -52,14 +45,14 @@ class ElectionSessionFixture extends TestFixture
     {
         $this->records = [
             [
-                'election_session_id' => 'efa6a87e-a740-4bb6-93f2-fc0a45f691ef',
+                'election_session_id' => '7bcd5aea-53df-438b-9f9e-ed1f206f1635',
                 'nama_kegiatan' => 'Lorem ipsum dolor sit amet',
                 'is_active' => 'L',
                 'type_area' => 'Lorem ipsum dolor sit amet',
-                'created_by' => '2dbe7969-7725-4227-86f5-73b988d839f7',
+                'created_by' => '64e0e2fa-4a28-4b20-b632-6f0a5e9c3a7f',
                 'modified_by' => 'Lorem ipsum dolor sit amet',
-                'created' => '2018-11-20 14:41:28',
-                'modified' => '2018-11-20 14:41:28',
+                'created' => '2018-11-24 16:53:25',
+                'modified' => '2018-11-24 16:53:25',
                 'deleted' => 'L'
             ],
         ];
