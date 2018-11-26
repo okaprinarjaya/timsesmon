@@ -36,13 +36,13 @@ class RelawanTable extends Table
 
     $this->setTable('relawan');
     $this->setDisplayField('username');
-    $this->setPrimaryKey('username');
+    $this->setPrimaryKey('relawan_id');
 
     $this->addBehavior('Timestamp');
 
     $this->belongsTo('ElectionSession', [
       'foreignKey' => 'election_session_id',
-      'joinType' => 'INNER'
+      'joinType' => 'LEFT'
     ]);
   }
 

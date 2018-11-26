@@ -39,7 +39,7 @@ class RelawanProfileTable extends Table
 
     $this->setTable('relawan_profile');
     $this->setDisplayField('nama');
-    $this->setPrimaryKey('relawan_id');
+    $this->setPrimaryKey('id');
 
     $this->addBehavior('Timestamp');
 
